@@ -1,0 +1,57 @@
+
+
+
+ 
+    <div class="container-fluid white footer">
+        <div class="row footer-container copyright-row">
+          <div class="col-xs-12  clearfix">          
+             LMSv2.6.1 - <a target="_BLANK" href="index.html"><b>Xerone IT Library</b></a> 
+          </div>
+        </div><!-- end row -->
+        </div><!-- end container -->
+    
+      <script type='text/javascript' src='assets/js/jquery.js'></script>
+      <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+    </body>
+    
+    <!-- Mirrored from lms.xeroneit.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Mar 2018 19:15:17 GMT -->
+    </html>
+    
+    <!-- for RTL support -->
+      
+     
+    
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $(".before_flip").hover(
+                function(){
+    
+                    $(".flip_overlay").css("display","none");
+                    if($(this).next().css("display")!="block")
+                        $(this).next().slideDown("slow");
+                },
+    
+                function(){				
+                    if(!$(this).is(':hover'))
+                    {
+                        $(this).next().slideUp("slow");
+                    }	
+                }
+    
+                );	
+            });
+    
+        var body = document.body,
+        timer;
+    
+        window.addEventListener('scroll', function() {
+          clearTimeout(timer);
+          if(!body.classList.contains('disable-hover')) {
+            body.classList.add('disable-hover')
+          }
+          
+          timer = setTimeout(function(){
+            body.classList.remove('disable-hover')
+          },300);
+        }, false)
+    </script>

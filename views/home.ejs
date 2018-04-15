@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from lms.xeroneit.net/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Mar 2018 19:15:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | homepage</title>      
+    <link rel="shortcut icon" href="assets/images/favicon.png"/>    
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- custom css -->    
+    <link href="assets/css/site/style.css" rel="stylesheet">    
+    <link href="assets/css/site/sidemenu.css" rel="stylesheet"> 
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '170020183529984'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=170020183529984&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+<!--This is for RTL support-->
+<script src="plugins/xregexp/xregexp.js" type="text/javascript"></script>
+
+
+
+<!--End of rtl support code-->
+	
+	
+	
+	
+	
+</head>
+<body>
+<div class="container-fluid header_container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+      <h1><a  href="index.html"><img src="assets/images/logo.png" alt="LMS" class="img-responsive"></a></h1>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <!-- <div class="form-group">
+            <label id="language_label">Language</label>               
+              <div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: language_info</p>
+<p>Filename: site/header.php</p>
+<p>Line Number: 118</p>
+
+</div><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  Invalid argument supplied for foreach()</p>
+<p>Filename: helpers/form_helper.php</p>
+<p>Line Number: 331</p>
+
+</div><select name="language" class="form-control" id="language_change">
+</select>              
+              <span class="red"></span>           
+         </div>  -->
+    </div>
+
+
+  </div> <!-- end row title -->
+  <div class="row">
+    <div class="col-md-12 no_padding">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img style="height:20px;" src="assets/images/logo.png" class="logo"></a>
+          </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class='active'><a href="home.html">Home</a></li>
+              <li ><a href="home/book.html">Books</a></li>
+              <li ><a href="home/contact.html">Contact Us</a></li>
+
+          
+                  
+                  
+             
+
+              <li ><a href="home/registration.html">Registration</a></li>
+
+              <li><a  href="home/login.html">Login</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div> <!-- end row navbar -->
+</div> <!-- end container header -->
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#language_change").change(function(){
+      var language=$(this).val();
+      $("#language_label").html("Loading Language...");
+      $.ajax({
+        url: 'http://lms.xeroneit.net/home/language_changer',
+        type: 'POST',
+        data: {language:language},
+        success:function(response){
+            $("#language_label").html("Language");
+            location.reload(); 
+        }
+      })
+      
+    });
+  });
+</script>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 grid wow hidden-xs fadeInDown animated">
+      <div class="carousel slide" id="carousel-915791">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#carousel-915791"></li>
+          <li data-slide-to="1" data-target="#carousel-915791"></li>
+          <li data-slide-to="2" data-target="#carousel-915791"></li>
+          <li data-slide-to="3" data-target="#carousel-915791"></li>
+          <li data-slide-to="4" data-target="#carousel-915791"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="slider_image img-thumbnail" src="assets/images/slider/1.jpg" />
+            <!-- <div class="carousel-caption"><h3>caption</h3></div> -->
+          </div>
+          <div class="item">
+            <img class="slider_image img-thumbnail" src="assets/images/slider/2.jpg" />
+            <!-- <div class="carousel-caption"><h3>caption</h3></div> -->
+          </div>
+          <div class="item">
+            <img class="slider_image img-thumbnail" src="assets/images/slider/3.jpg" />
+            <!-- <div class="carousel-caption"><h3>caption</h3></div> -->
+          </div>
+          <div class="item">
+            <img class="slider_image img-thumbnail" src="assets/images/slider/4.jpg" />
+            <!-- <div class="carousel-caption"><h3>caption</h3></div> -->
+          </div>
+          <div class="item">
+            <img class="slider_image img-thumbnail" src="assets/images/slider/5.jpg" />
+            <!-- <div class="carousel-caption"><h3>caption</h3></div> -->
+          </div>
+
+
+        </div> 
+        <a class="left carousel-control"  href="#carousel-915791" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+        <a class="right carousel-control" href="#carousel-915791" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div> <!-- end column slider -->
+  </div>
+</div> <!-- end container slider + message -->
+
+<script>
+  $(function(){
+    $('.carousel').carousel({
+      interval: 5000
+    });
+ });
+</script><br/>
+<style type="text/css">
+  
+/*
+Bestsellers Badge
+*/
+
+.yith-wcbsl-badge-wrapper {
+position : absolute;
+top : -20px;
+left : 20;
+width : 120px;
+height : 120px;
+overflow : hidden;
+}
+
+.green {
+  background : #50974F !important;
+  color: white !important;
+}
+.yith-wcbsl-badge-content {
+font-family : "Open Sans", Helvetica, sans-serif;
+font-size : 16px;
+height : 40px;
+width : 200px;
+background : #a00000;
+color : #fff;
+-webkit-transform : rotate(-45deg);
+-ms-transform : rotate(-45deg);
+transform : rotate(-45deg);
+text-align : center;
+line-height : 40px;
+position : absolute;
+/*top : 20px;*/
+left : -60px;
+box-shadow : 0px 1px 4px 0 rgba(0, 0, 0, 0.3);
+font-weight : 800;
+}
+
+.yith-wcbsl-badge-wrapper.yith-wcbsl-mini-badge {
+width : 80px;
+height : 80px;
+}
+
+.yith-wcbsl-badge-wrapper.yith-wcbsl-mini-badge .yith-wcbsl-badge-content {
+font-size : 12px;
+height : 30px;
+width : 130px;
+line-height : 30px;
+top : 13px;
+left : -36px;
+}
+</style>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 grid">
+              <div class="border_gray grid_content content_grid clearfix">
+                <h4 class="column-title in_center"><i class="fa fa-dot-circle-o blue"> </i> <span class="blue">Most Recent Books</span></h4>                  
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 0ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> 08                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="08" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> 08</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @14/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;08<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;08<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;08<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;dsdsa<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;2010                           ( 2010 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> let us C                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="let us C" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> asraf</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @11/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;computer science<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;let us C<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;asraf<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;34534gvveqwr``<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;abc publisher<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;10 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;10 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;I                           ( 2017 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> 05                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="05" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> 05</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @05/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;05<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;05<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;05<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;2010<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;05                           ( 2010 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> Maths                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="Maths" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Rohit Shetty</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @05/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Maths<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Rohit Shetty<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;S001<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;8 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;8 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;2017                           ( 0000 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> sochen                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="sochen" src="upload/cover_images/thumbnail_cover_images/1520234052.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> ss</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @05/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;sochen<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;ss<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;sochen<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;ee<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;2 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;2 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;ss                           ( 2017 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> 9027400091                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="9027400091" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> 9027400091</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @04/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;9027400091<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;9027400091<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;9027400091<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;9027400091                           ( 0000 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> New testing book                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content">Unavailable</div> </div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-danger">unavailable</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="New testing book" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Wahlberg</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @02/03/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;New testing book<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Wahlberg<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;123456<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;0 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;1                           ( 2016 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> Mind Hunter                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="Mind Hunter" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Ni Ko Ye</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @28/02/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;Fiction<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Mind Hunter<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Ni Ko Ye<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;00001<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;Two Cats<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;2 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;2 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;3                           ( 2000 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> maths                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="maths" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> rd sharma</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @27/02/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;maths<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;rd sharma<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;9087<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;56 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;56 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;6th                           ( 2014 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> test                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="test" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> test</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @25/02/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;test<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;test<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;12345<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;1 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;2                           ( 0000 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> 09                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content">Unavailable</div> </div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-danger">unavailable</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="09" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> 09</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @24/02/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;09<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;09<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;09<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;2010<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;3 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;0 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;09                           ( 2010 )                        </div>                     
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail border_gray">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                  
+                                           
+                                           <br/><br/><br/>    <!-- extra space for tag if LTR -->                                       
+                                                                                    
+                                                                                                                                 <i class="fa fa-book"></i> C PROGRAMMING                                           <!-- if LTR theme theme load sticky tag -->
+                                           <span class="hide_rtl"> 
+                                           <div class="yith-wcbsl-badge-wrapper yith-wcbsl-mini-badge"> <div class="yith-wcbsl-badge-content green">Available</div></div>                                           </span>
+                                           <!-- if RTL theme theme dont load sticky tag, load label -->
+                                           <span class="show_rtl text-center" style="display:none">
+                                             <span class="label label-success">available</span>                                           </span>
+                                        </div>
+                                        <br/>
+                                       <img alt="C PROGRAMMING" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive" style="width:190px!important;height:250px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> NESW</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Added @24/02/2018 
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                         
+                        <div class="flip_overlay" style="display:none">                      
+                           <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;C PROGRAMMING<br/>
+                           <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;NESW<br/>
+                           <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN  </b> &nbsp;04534<br/>
+                           <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher  </b> &nbsp;luxmi<br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Total Books &nbsp </b> &nbsp;17 &nbsp Copy <br/>
+                           <i class="fa fa-book"></i>&nbsp; <b>Available Books &nbsp </b> &nbsp;17 &nbsp Copy <br/>
+                                                       <i class="fa fa-pencil"></i>&nbsp; <b>Edition  </b> &nbsp;1st                           ( 2018 )                        </div>                     
+                    </div>
+                              </div>
+            </div>
+        </div>
+    </div>      
+  </div> <!-- end column middle area -->
+</div> <!-- end container main content -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 grid">
+              <div class="border_gray grid_content content_grid clearfix">
+                <h4 class="column-title in_center"><i class="fa fa-dot-circle-o blue"></i> <span class="blue"> Most Issued Books</span></h4>                  
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 0ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> MANAGEMENT ACCOUNTING                                        </div>
+                                        <br/>
+                                       <img alt="MANAGEMENT ACCOUNTING" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> M Y KHAN & P K JAIN</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;MANAGEMENT ACCOUNTING<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;M Y KHAN & P K JAIN<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;0-07-463656-1<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> PROBLEMS ON MANAGERIAL ACCOUNTING                                        </div>
+                                        <br/>
+                                       <img alt="PROBLEMS ON MANAGERIAL ACCOUNTING" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> NAFEES BAIG</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;PROBLEMS ON MANAGERIAL ACCOUNTING<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;NAFEES BAIG<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> SOLUTIONS IN PROBLEMS IN ADVANCED ACC...                                        </div>
+                                        <br/>
+                                       <img alt="SOLUTIONS IN PROBLEMS IN ADVANCED ACCOUNTS VOL-I" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> "M.C.SHUKLA </h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;SOLUTIONS IN PROBLEMS IN ADVANCED ACCOUNTS VOL-I<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;"M.C.SHUKLA <br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;81-219-1016-1<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;T.S.GREWAL & S.C.GUPTA"                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> Test eBook                                        </div>
+                                        <br/>
+                                       <img alt="Test eBook" src="upload/cover_images/thumbnail_cover_images/1508534096.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> test person</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Test eBook<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;test person<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;1234567890123<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;test pub                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;1                             ( 1999 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> Let Us C                                        </div>
+                                        <br/>
+                                       <img alt="Let Us C" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Y.Kanitakar</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Let Us C<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Y.Kanitakar<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;9900<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;Bansal                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;2                             ( 2017 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> ADVANCED ACCOUNTS                                        </div>
+                                        <br/>
+                                       <img alt="ADVANCED ACCOUNTS" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> DOUGLAS GARBUTT</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 2 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;ADVANCED ACCOUNTS<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;DOUGLAS GARBUTT<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> Mind Hunter                                        </div>
+                                        <br/>
+                                       <img alt="Mind Hunter" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Ni Ko Ye</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;Fiction<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Mind Hunter<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Ni Ko Ye<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;00001<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;Two Cats                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;3                             ( 2000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> Test                                        </div>
+                                        <br/>
+                                       <img alt="Test" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> TestTest</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Test<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;TestTest<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;TestTestTest                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> new sri test                                        </div>
+                                        <br/>
+                                       <img alt="new sri test" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> srinivas</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;new sri test<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;srinivas<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;111111212121<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;ssss                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> ADVANCED ACCOUNTANCY                                        </div>
+                                        <br/>
+                                       <img alt="ADVANCED ACCOUNTANCY" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> RUP RAM GUPTA & VIDYA SARAN GUPTA</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;ADVANCED ACCOUNTANCY<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;RUP RAM GUPTA & VIDYA SARAN GUPTA<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> rdffd                                        </div>
+                                        <br/>
+                                       <img alt="rdffd" src="upload/cover_images/thumbnail_cover_images/1514137836.html" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> dfsdfsd</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;rdffd<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;dfsdfsd<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;411<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;dsfs                             ( 2017 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                       <div class="mythumbnail-title"> 
+                                                                                                                     <i class="fa fa-book"></i> Software engineering - James                                        </div>
+                                        <br/>
+                                       <img alt="Software engineering - James" src="upload/cover_images/thumbnail_cover_images/1517666072.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> James Cameroon</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Issued 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>  
+                                                <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Software engineering - James<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;James Cameroon<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;345631<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;Williams                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;52015                             ( 0000 )                        </div>                      
+                    </div>
+                              </div>
+            </div>
+        </div>
+    </div>      
+  </div> <!-- end column middle area -->
+</div> <!-- end container main content -->
+
+<br/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 grid">
+              <div class="border_gray grid_content content_grid clearfix">
+                <h4 class="column-title in_center"><i class="fa fa-dot-circle-o blue"> </i> <span class="blue">Most Read Books</span></h4>                  
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 0ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> COMMERCE                                        </div>
+                                        <br/>
+                                       <img alt="COMMERCE" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> "DR.J.K.PUROHIT </h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;COMMERCE<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;"DR.J.K.PUROHIT <br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;DR.B.D.TATER & DR.P.K.SHAH"                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> Learning programmes for Community hea...                                        </div>
+                                        <br/>
+                                       <img alt="Learning programmes for Community health 2 Public Health" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> Suresh</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Learning programmes for Community health 2 Public Health<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;Suresh<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;16505<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;XYZ SOCHARA                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;2nd                             ( 2007 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> FUNDAMENTALS OF ACCOUNTING FOR CA FOU...                                        </div>
+                                        <br/>
+                                       <img alt="FUNDAMENTALS OF ACCOUNTING FOR CA FOUNDATION COURSE" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> A MUKHERJEE & M HANIF</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;FUNDAMENTALS OF ACCOUNTING FOR CA FOUNDATION COURSE<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;A MUKHERJEE & M HANIF<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;0-07-463257-4<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> MANUAL OF COST ACCOUNTS                                        </div>
+                                        <br/>
+                                       <img alt="MANUAL OF COST ACCOUNTS" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> H.JULIUS LUNT & ARTHUR H.RIPLEY</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;MANUAL OF COST ACCOUNTS<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;H.JULIUS LUNT & ARTHUR H.RIPLEY<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> Software engineering - James                                        </div>
+                                        <br/>
+                                       <img alt="Software engineering - James" src="upload/cover_images/thumbnail_cover_images/1517666072.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> James Cameroon</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Software engineering - James<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;James Cameroon<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;345631<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;Williams                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;52015                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> ADVANCED ACCOUNTANCY                                        </div>
+                                        <br/>
+                                       <img alt="ADVANCED ACCOUNTANCY" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> DR.S.M.SHUKLA</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;ADVANCED ACCOUNTANCY<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;DR.S.M.SHUKLA<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> Insidious chapter1                                        </div>
+                                        <br/>
+                                       <img alt="Insidious chapter1" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> sadasiv</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;Insidious chapter1<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;sadasiv<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;0001<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;jk publisher                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;1                             ( 2015 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1400ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> FINANCIAL  MANAGEMENT                                        </div>
+                                        <br/>
+                                       <img alt="FINANCIAL  MANAGEMENT" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> R.S.KULSHRESHTHA</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 1 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;FINANCIAL  MANAGEMENT<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;R.S.KULSHRESHTHA<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1600ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> PERSONNEL MANAGEMENT & INDUSTRIAL REL...                                        </div>
+                                        <br/>
+                                       <img alt="PERSONNEL MANAGEMENT & INDUSTRIAL RELATIONS" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> R.L.PATANI</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 3 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;PERSONNEL MANAGEMENT & INDUSTRIAL RELATIONS<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;R.L.PATANI<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 1800ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> COST ACCOUNTING                                        </div>
+                                        <br/>
+                                       <img alt="COST ACCOUNTING" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> B.K.AGERWAL</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 5 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;COST ACCOUNTING<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;B.K.AGERWAL<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2000ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> PUBLISHED STATEMENTS OF COMPANIES IN ...                                        </div>
+                                        <br/>
+                                       <img alt="PUBLISHED STATEMENTS OF COMPANIES IN INDIAN" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> DR.A.N.AGARWALA</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 2 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;PUBLISHED STATEMENTS OF COMPANIES IN INDIAN<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;DR.A.N.AGARWALA<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-centered mythumbnail-container  wow fadeInDown animated">                                    
+                        <div  data-wow-delay="0ms" data-wow-duration="400ms" class="before_flip wow zoomIn animated" style="visibility: visible; animation-duration: 400ms; animation-delay: 2200ms; animation-name: zoomIn;">
+                            <div class="mythumbnail">                            
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                                                                                                                 <i class="fa fa-book"></i> MANAGEMENT ACCOUNTING                                        </div>
+                                        <br/>
+                                       <img alt="MANAGEMENT ACCOUNTING" src="upload/cover_images/thumbnail_cover_images/cover_default.jpg" class="img-responsive border_gray" style="width:160px!important;height:210px!important;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="mythumbnail-title">
+                                            <h5><i class="fa fa-user"></i> DR.S.P.GUPTA</h5>
+                                        </div>                                                                      
+                                        <div class="mythumbnail-title">
+                                           Total Read 2 times                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>                          
+                        </div>
+                          
+                        <div class="flip_overlay" style="display:none">                      
+                             <i class="fa fa-list-ol"></i>&nbsp; <b>Book Category </b> &nbsp;<br/>
+                             <i class="fa fa-book"></i>&nbsp; <b>Title </b> &nbsp;MANAGEMENT ACCOUNTING<br/>
+                             <i class="fa fa-user"></i>&nbsp; <b>Author </b>&nbsp;DR.S.P.GUPTA<br/>
+                             <i class="fa fa-sort-numeric-asc"></i>&nbsp; <b>ISBN </b> &nbsp;<br/>
+                             <i class="fa fa-folder-open"></i>&nbsp; <b>Publisher </b> &nbsp;                             <br/>
+                              <i class="fa fa-pencil"></i>&nbsp; <b>Edition </b> &nbsp;                             ( 0000 )                        </div>                      
+                    </div>
+                              </div>
+            </div>
+        </div>
+    </div>      
+  </div> <!-- end column middle area -->
+</div> <!-- end container main content -->
+
+<br/>
+
+
+
+ 
+    <div class="container-fluid white footer">
+    <div class="row footer-container copyright-row">
+      <div class="col-xs-12  clearfix">          
+         LMSv2.6.1 - <a target="_BLANK" href="index.html"><b>Xerone IT Library</b></a> 
+      </div>
+    </div><!-- end row -->
+    </div><!-- end container -->
+
+  <script type='text/javascript' src='assets/js/jquery.js'></script>
+  <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+</body>
+
+<!-- Mirrored from lms.xeroneit.net/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Mar 2018 19:15:37 GMT -->
+</html>
+
+<!-- for RTL support -->
+  
+ 
+
+<script type="text/javascript">
+	$("document").ready(function(){
+		$(".before_flip").hover(
+			function(){
+
+				$(".flip_overlay").css("display","none");
+				if($(this).next().css("display")!="block")
+					$(this).next().slideDown("slow");
+			},
+
+			function(){				
+				if(!$(this).is(':hover'))
+				{
+					$(this).next().slideUp("slow");
+				}	
+			}
+
+			);	
+	    });
+
+	var body = document.body,
+    timer;
+
+	window.addEventListener('scroll', function() {
+	  clearTimeout(timer);
+	  if(!body.classList.contains('disable-hover')) {
+	    body.classList.add('disable-hover')
+	  }
+	  
+	  timer = setTimeout(function(){
+	    body.classList.remove('disable-hover')
+	  },300);
+	}, false)
+</script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from lms.xeroneit.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Mar 2018 19:14:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | homepage</title>      
+    <link rel="shortcut icon" href="assets/images/favicon.png"/>    
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- custom css -->    
+    <link href="assets/css/site/style.css" rel="stylesheet">    
+    <link href="assets/css/site/sidemenu.css" rel="stylesheet"> 
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '170020183529984'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=170020183529984&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--This is for RTL support-->
+<script src="plugins/xregexp/xregexp.js" type="text/javascript"></script>
+<!--End of rtl support code-->
+</head>
+<body>
+<div class="container-fluid header_container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+      <h1><a  href="/"><img src="assets/images/logo.png" alt="LMS" class="img-responsive"></a></h1>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        
+    </div>
+  </div> <!-- end row title -->
+  <div class="row">
+    <div class="col-md-12 no_padding">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img style="height:20px;" src="assets/images/logo.png" class="logo"></a>
+          </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class='active'><a href="/">Home</a></li>
+              <li ><a href="/books">Books</a></li>
+              <li ><a href="/contact">Contact Us</a></li>
+              <li ><a href="/users/registration">Registration</a></li>
+              <li><a  href="/users/login">Login</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div> <!-- end row navbar -->
+</div> <!-- end container header -->
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#language_change").change(function(){
+      var language=$(this).val();
+      $("#language_label").html("Loading Language...");
+      $.ajax({
+        url: 'http://lms.xeroneit.net/home/language_changer',
+        type: 'POST',
+        data: {language:language},
+        success:function(response){
+            $("#language_label").html("Language");
+            location.reload(); 
+        }
+      })
+      
+    });
+  });
+</script>
